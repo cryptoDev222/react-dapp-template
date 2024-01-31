@@ -14,7 +14,8 @@ const ConnectButton = () => {
         color: 'var(--theme-button-text)',
         outline: 'none',
         height: '32px',
-        border: 'none'
+        border: 'none',
+        cursor: 'pointer'
       }}
         onClick={() => {
           if (!account) {

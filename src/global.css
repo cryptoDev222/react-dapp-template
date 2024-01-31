@@ -1,9 +1,13 @@
 html.dark {
   --theme-background: #030303;
   --theme-text: #FFFFFF;
-  --theme-button-back: #FFFFFF;
-  --theme-button-text: #000000;
+  --theme-button-back: #3F74Ea;
+  --theme-button-text: #FFFFFF;
   --theme-secondary-back: #1A1A1A;
+  --theme-inputPanelBorder: #888;
+  --theme-error: #d11928;
+  --theme-success: #28ac3e;
+  --theme-warning: #e98a1e;
 }
 
 html.light {
@@ -12,11 +16,23 @@ html.light {
   --theme-button-back: #000000;
   --theme-button-text: #FFFFFF;
   --theme-secondary-back: #A0A0A0;
+  --theme-inputPanelBorder: #888;
+  --theme-error: #d11928;
+  --theme-success: #28ac3e;
+  --theme-warning: #e98a1e;
 }
 
 html, body {
   margin: 0;
   color: var(--theme-text);
+}
+
+button {
+  cursor: pointer;
+}
+
+button:hover {
+  opacity: 0.8;
 }
 
 a {

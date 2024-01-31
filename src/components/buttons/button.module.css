@@ -1,0 +1,9 @@
+.normal {
+  border-radius: 8px;
+  background: var(--theme-button-back);
+  color: var(--theme-button-text);
+  outline: none;
+  height: 32px;
+  border: none;
+  cursor: pointer;
+}

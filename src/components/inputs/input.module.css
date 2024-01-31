@@ -1,0 +1,60 @@
+.input {
+  height: 28px;
+  border: 1px solid var(--theme-inputPanelBorder);
+  border-radius: 8px;
+  padding-inline-start: 12px;
+  padding-inline-end: 12px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  font-size: 18px;
+}
+
+.input:focus {
+  outline: none;
+  border: 1px solid var(--theme-inputPanelBorder);
+}
+
+.lineInput {
+  height: 28px;
+  background: transparent;
+  border: 2px solid var(--theme-inputPanelBorder);
+  border-radius: 8px;
+  padding-inline-start: 12px;
+  padding-inline-end: 12px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  font-size: 18px;
+  color: var(--theme-text);
+}
+
+.lineInput:focus, .lineInput:hover {
+  outline: none;
+  border: 2px solid var(--theme-inputPanelBorder);
+}
+
+.searchInputWrapper {
+  display: flex;
+  justify-items: center;
+  align-items: center;
+  width: 100%;
+  position: relative;
+}
+
+.searchInput {
+  width: 100%;
+  height: 28px;
+  background: transparent;
+  border: 2px solid var(--theme-inputPanelBorder);
+  border-radius: 8px;
+  padding-inline-start: 30px;
+  padding-inline-end: 30px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  font-size: 18px;
+  color: var(--theme-text);
+}
+
+.searchInput:focus, .searchInput:hover {
+  outline: none;
+  border: 2px solid var(--theme-inputPanelBorder);
+}

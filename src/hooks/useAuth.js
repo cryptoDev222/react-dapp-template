@@ -12,11 +12,12 @@ const useAuth = () => {
       if (connector) {
         connector
           .activate()
-          .then(() =>
+          .then(() => {
             console.log("Successfully Connected!", getName(connector))
-          )
+            window.localStorage.setItem('react-dapp-wallet', getName(connector))
+          })
           .catch((error) => {
-            window.localStorage.removeItem('sphynx-manage-wallet');
+            window.localStorage.removeItem('react-dapp-wallet');
             console.log("Error login : ", error.name, error.message);
           });
       } else {
@@ -30,7 +31,7 @@ const useAuth = () => {
     } else {
       connector.resetState();
     }
-    window.localStorage.removeItem('sphynx-manage-wallet');
+    window.localStorage.removeItem('react-dapp-wallet');
   };
 
   return { login, logout };

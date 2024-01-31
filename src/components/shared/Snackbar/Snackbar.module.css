@@ -1,3 +1,55 @@
+.provider {
+  position: fixed;
+  gap: 8px;
+  top: 20px;
+  right: 24px;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 320px;
+}
+
+@keyframes alert-animation-open {
+  from {
+    transform: translateX(400px);
+  }
+  to {
+    transform: translateX(0px);
+  }
+}
+
+@keyframes alert-animation-close {
+  from {
+    transform: translateX(0px);
+  }
+  to {
+    transform: translateX(400px);
+  }
+}
+
+.open {
+  animation: alert-animation-open 0.5s ease-in-out;
+}
 .close {
-  padding: "8px"
+  animation: alert-animation-close 0.5s ease-in-out forwards;
+}
+.alert {
+  border-radius: 8px;
+  padding: 8px;
+  width: 100%;
+  box-sizing: border-box;
+  max-width: 320px;
+  cursor: pointer;
+}
+
+.success {
+  background-color: var(--theme-success);
+}
+
+.error {
+  background-color: var(--theme-error);
+}
+
+.warning {
+  background-color: var(--theme-warning);
 }
