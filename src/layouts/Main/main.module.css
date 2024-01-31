@@ -1,0 +1,8 @@
+.pageContainer {
+  margin-top: 60px;
+  padding: 12px;
+  background-color: var(--theme-background);
+  min-height: calc(100vh - 60px);
+  display: flex;
+  flex-flow: column wrap;
+}
